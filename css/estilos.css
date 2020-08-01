@@ -1,0 +1,247 @@
+/* soft reset do css */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/banner.jpg');
+    background-size: 220vh;
+    font-family: Courier;
+    height: 100vh;
+    font-size: 14px;
+   }
+ /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+ @media (min-width: 300px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* break point */ 
+@media (min-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 25px;
+  }
+
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.menu {
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100vw;
+    top: 0;  
+    
+  }
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.menu li {
+    list-style: none;
+  }
+
+.menu a {
+    padding: 10px 20px;
+    display: block;
+    transition: 2s;
+  }
+.menu a:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+.site-subtitle,
+.site-title {
+    text-align: center;
+    color: whitesmoke;
+  }
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Audiowide', cursive;
+}
+  
+.site-subtitle {
+    color: whitesmoke;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1.8em;
+  }
+
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+ 
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+  }
+
+}
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+    font-family: 'Share Tech Mono', monospace;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+.contato {
+  background-color: rgba(122, 133, 168, 0.8);
+}
+
+.sobre {
+  background-color: rgb(199, 146, 194, .8);
+    
+}
+.sobre p {
+  color: black;
+  text-indent: 1.4em;
+  margin-bottom: 1.4em;
+  text-align: justify;
+  
+
+}
+.sobre a {
+  color: black;
+  text-decoration: underline;
+}
+
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+  font-size: 10px;
+}
+
+@media (min-width: 300px) {
+  .sobre .avatar {
+  float: right;
+  margin-left: 2em;
+  font-size: 10px;
+  
+ }
+}
+.sobre .avatar img {
+  border-radius: 50%;
+}
+
+@media (min-width: 200px) {
+.sobre .avatar img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+}
+@media (min-width: 400px) {
+  .sobre .avatar img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+  }
+  @media (min-width: 600px) {
+    .sobre .avatar img {
+      border-radius: 50%;
+      height: 120px;
+      width: 120px;
+    }
+    }
+    @media (min-width: 1024px) {
+      .sobre .avatar img {
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+      }
+      }
+.sobre a:hover {
+  background-color: black;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+   grid-template-columns: 240px 240px;
+  }
+} 
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+   grid-template-columns: 240px 240px;
+   align-content: center;
+   justify-content: center;
+   height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 25px;
+}
+.img-portfolio{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+}
+
+.img-portfolio:hover {
+  transform: scale(1.2);
+}
+
+.contato .icons {
+  text-align: center;
+
+}
+.contato a {
+  color: whitesmoke;
+  font-size: 4em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, .5)
+}
